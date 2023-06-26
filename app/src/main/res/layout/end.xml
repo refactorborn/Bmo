@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background10">
+
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/restart"
+        android:contentDescription="TODO"
+        android:onClick="restart"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="520dp"
+        android:layout_marginEnd="280dp"
+        android:background="@drawable/home"
+        android:contentDescription="TODO"
+        android:onClick="home"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="520dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/exit"
+        android:contentDescription="TODO"
+        android:onClick="exit"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+
+
+    <TableLayout
+        android:layout_width="330dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="46dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/p"
+                android:text="Your Points: "
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/Points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kenny_blocks"
+                android:text="50"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:fontFamily="@font/p"
+                android:text="Highest: "
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+            <TextView
+                android:id="@+id/tvHighest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:fontFamily="@font/kenny_blocks"
+                android:text="100"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

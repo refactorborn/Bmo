@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="93dp"
+        android:layout_height="79dp"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintGuide_percent="0.35"
+        app:srcCompat="@drawable/bmo1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="-12dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="BMO"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="106dp"
+        android:background="@color/teal_700"
+        android:text="GAME"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="-2dp"
+        android:text="with"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/startgame"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="110dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:onClick="StartGame"
+        android:text="START"
+        android:textColor="@android:color/white"
+        android:textSize="32dp" />
+
+</RelativeLayout>
